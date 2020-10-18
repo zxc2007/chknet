@@ -35,7 +35,7 @@ if(preg_match('/^(!chklist) (.*)/is',$chk)){
             $cu=count($exr);
             for($i=0;$i < $cu;$i++){
                 $ggg=str_replace(" ","",$exr[$i]);
-                $get=file_get_contents('https://protonapi.000webhostapp.com/chknet.php?cc='.$ggg);
+                $get=file_get_contents('https://laganty.ml/.rest/chknet.php?cc='.$ggg);
                 $js=json_decode($get, true);
                 if($js['error']==0){
                     print $g.$js['msg']."\n";
