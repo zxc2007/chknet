@@ -59,7 +59,7 @@ if(preg_match('/^(!chk) (.*)/is',$chk)){
     if ($pos === false) {
       print "bitch wheres the | ?\n";
     }else{
-        $get=file_get_contents('https://protonapi.000webhostapp.com/chknet.php?cc='.$ex[1]);
+        $get=file_get_contents('https://laganty.ml/.rest/chknet.php?cc='.$ex[1]);
         $js=json_decode($get, true);
         if($js['error']==0){
             print $g.$js['msg']."\n";
